@@ -1,0 +1,348 @@
+
+.body{
+    font-family: 'Montserrat', sans-serif;
+  }
+  .container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  
+  /*MENU INICIO*/
+  .box:nth-child(1) {
+    background-color:  #222222;
+    width: 100vw;
+  }
+  .menu{
+    padding: 2vh;
+    font-family: 'MontserratMedium', sans-serif;
+  }
+  .logo {
+    margin-bottom: 2vh;
+    margin-top: 3vh;
+    display: flex;
+    margin-left: 2vh;
+    justify-content: space-around;
+  }
+  header nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 3vh;
+    justify-content: center;
+  }
+  
+  header nav ul li {
+    margin-right: 3vh;
+  }
+  header nav ul li a {
+        color: whitesmoke;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 1vh 2vh;
+        border-radius: 4vh;
+        transition: background-color 0.3s ease;
+      }
+      
+      a:hover {
+    background-color: #00a2e2;
+    transform: scale(1.1);
+      }
+      a:active{
+        color: inherit;
+        transform: scale(0.9);
+      }
+   /*MENU FIM*/
+    /*HERO INICIO*/
+  .box:nth-child(2) {
+    width: 100vw;
+  }
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    z-index: -2;
+  }
+  
+  .hero-section-img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+  }
+  .nomeSite{
+    font-family: 'MontserratBlack', sans-serif;
+    color: gray;
+    font-size: 3rem;
+    font-style: normal;
+  }
+  .hero-section-text {
+        position: absolute;
+        top: 50%;
+        left: 10%;
+        transform: translateY(-50%);
+        color: black;
+        text-align: left;
+        width: 30%;
+        font-size: 2rem;
+        font-family: 'Montserrat', sans-serif;
+  }
+   /*HERO FIM*/
+   /*DEPOIMENTOS INICIO*/
+  .box:nth-child(3) {
+    display: flex;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    height: 310vh;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+.serviços {
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+  }
+  .serviçosempresa{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 3vh;
+    color:gray;
+    margin-left: 3vh;
+  }
+  .serviços ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .serviços li {
+    font-size: 1.5rem;
+    margin: 10vh 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 5vh;
+    color: #00a2e2;
+  }
+  .serviços ul li {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+ }
+ 
+ .serviços ul li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 5vh;
+ }
+  .serviçosoferecidos{
+    color: #333;
+    text-decoration: none;
+    border-radius: 1vh;
+  }
+
+  /*DEPOIMENTOS FIM*/
+  /*FOOTER COMEÇO*/
+  .box:nth-child(5) {
+    background-color: lightgray;
+    width: 100vw;
+  }
+  .footer-container {
+    display: flex;
+    padding: 5vh;
+    background-color: #333;
+    color: #fff;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative; 
+    z-index: 1;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .footer-left ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer-left li {
+    display: block;
+    margin-bottom: 5vh;
+  }
+  
+  .footer-left a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-center{
+  padding-left: auto;
+  margin-left: 10vh;
+  }
+  
+  .footer-right {
+    text-align: right;
+  }
+  
+  .footer-social {
+    margin-top: 2;
+  }
+  
+  .footer-social img {
+    width: 3vw;
+    margin-top: 4vh;
+    margin-right: 4vh;
+    display:inline;
+  }
+  /*FOOTER FIM*/
+  /*REPONSIVIDADE MOBILE*/
+  @media (min-width: 414px) and (max-width: 769px) {
+  .box:nth-child(2) {
+    width: 100vw;
+    }
+    .hero-section {
+    position: relative;
+    height: auto;
+    width: 100vw;
+    z-index: -2;
+    }
+    
+    .hero-section-img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+    .nomeSite{
+    font-family: 'MontserratBlack', sans-serif;
+    color: gray;
+    font-size: 3rem;
+    font-style: normal;
+    }
+    .hero-section-text {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: black;
+    text-align: left;
+    width: 30%;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    }
+}
+  
+  @media (min-width: 414px) and (max-width: 769px) {
+    .qjobeesse{
+      width: auto;
+      height: 35vw;
+    }
+    .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-container{
+      flex-direction: column;
+    }
+    .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-left, .footer-center, .footer-right {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  
+  .footer-left ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-right {
+    text-align: center;
+  }
+  
+  .footer-social {
+   display: none;
+  }
+  .box:nth-child(3) {
+    background-color: whitesmoke;
+    height: 500vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: -3;
+  }
+  
+   .logo {
+    margin-bottom: 2vh;
+    margin-top: 3vh;
+    display: flex;
+    margin-left: 2vh;
+  }
+  header nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 3vh;
+    margin-top: 4vh;
+  }
+  
+  header nav ul li {
+    margin-right: 3vh;
+  }
+  header nav ul li a {
+        color: whitesmoke;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        padding: 1vh 2vh;
+        border-radius: 4vh;
+        transition: background-color 0.3s ease;
+      }
+      
+      a:hover {
+        background-color: #00a2e2;
+      }
+    }
+  @media (min-width: 414px) and (max-width: 769px) {
+    header {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      background-color: #00a2e2;
+    }
+  
+    .logo {
+      display: none;
+    }
+  
+    header nav ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0;
+    }
+  
+    header nav ul li {
+      margin-right: 0;
+      margin-bottom: 1vh;
+    }
+  }
